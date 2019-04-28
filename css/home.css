@@ -1,0 +1,87 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    width: 100%;
+    background-color: #FFE4B5;
+    color: #800080;
+    font-family: cursive;
+}
+
+ul.navBar {
+    list-style-type: none;
+    background-color: #800080;
+    height: 5%;
+    width: 90%;
+    margin: auto;
+    font-size: 150%;
+    overflow: hidden;
+}
+
+li.topBar {
+    float: left;
+    padding-left: 5%;
+}
+
+li.topBarLogout{
+    float: right;
+    padding-right: 5%;
+}
+
+a.barHover{
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.barHover:hover {
+    border-bottom: solid;
+    border-bottom-color: #FFFFFF;
+    color: #DC143C;
+    height: 100%;
+    width: 100%;
+}
+
+h1.pageTitle {
+    font-size: 500%;
+    font-family: sans-serif;
+}
+
+table.tableStyle {
+    border: 5px double black;
+}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.formBar {
+    list-style-type: none;
+    margin: auto;
+}
+
+
+button {
+    border: none;
+    margin: 2.5%;
+    cursor: pointer;
+    background-color: #87CEEB;
+    height: 25%;
+    width: 10%;
+}
+
+nav{
+    margin: 10%;
+}
+
+nav.positionButton{
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+}

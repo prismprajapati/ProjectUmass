@@ -1,0 +1,23 @@
+Between the codes :{
+$pwUserCheck = $_POST['pswCheck'];
+
+if(!filter_var($eMail, FILTER_VALIDATE_EMAIL)){
+}:
+----------------------------------BelowCodes---------------------------------------------------------------------------------------------------------------------------------
+if(empty($fstName) || empty($lastName) || empty($eMail) || empty($countryName) || empty($pwUser) || empty($pwUserCheck)){
+  header("Location: ../../pages/regisSite.php?error=emptyfields&firstName=".$fstName."&lastName=".$lstName."&emailAdd=".$eMail."&country=".$countryName);
+  exit();
+}
+-------------------------------------AboveCodes-------------------------------------------------------------------------------------------------------------------------------
+Between the codes:{
+mysqli_stmt_store_result($stateMent);
+
+else {
+}:
+-------------------------------------BelowCodes-------------------------------------------------------------------------------------------------------------------------------
+$checkEmail = mysqli_stmt_num_rows($stateMent);
+if ($checkEmail > 0) {
+  header("Location: ../pages/registration.html?error=emailAlreadyUsed&firstName=".$firstName."&lastName=".$lastName."&country=".$countryName);
+  exit();
+}
+--------------------------------------AboveCodes------------------------------------------------------------------------------------------------------------------------------
